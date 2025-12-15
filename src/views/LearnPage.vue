@@ -10,38 +10,88 @@
                     </svg>
                 </div>
                 <div>
-                    <h2 class="text-3xl font-bold">Learn Tenses</h2>
+                    <h2 class="text-3xl font-bold">Learn Grammar</h2>
                     <p class="text-blue-100 text-sm mt-1">Master English grammar step by step</p>
                 </div>
             </div>
         </div>
 
-        <!-- Filter Tabs -->
+        <!-- Main Category Toggle -->
         <div class="flex gap-3 overflow-x-auto pb-2 scrollbar-hide">
-            <button v-for="tab in tabs" :key="tab.id" @click="activeTab = tab.id" :class="[
-                'flex-shrink-0 px-5 py-2.5 rounded-xl font-medium text-sm transition-all duration-200',
-                activeTab === tab.id
-                    ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg shadow-blue-200'
+            <button @click="mainCategory = 'tenses'" :class="[
+                'flex-shrink-0 px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-200',
+                mainCategory === 'tenses'
+                    ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg'
                     : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'
             ]">
-                {{ tab.label }}
-                <span :class="[
-                    'ml-2 px-2 py-0.5 rounded-full text-xs font-semibold',
-                    activeTab === tab.id ? 'bg-white/20' : 'bg-gray-100'
-                ]">
-                    {{ tab.count }}
-                </span>
+                📅 Tenses
+            </button>
+            <button @click="mainCategory = 'grammar'" :class="[
+                'flex-shrink-0 px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-200',
+                mainCategory === 'grammar'
+                    ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg'
+                    : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'
+            ]">
+                📚 Grammar Topics
             </button>
         </div>
 
-        <!-- Content Area -->
-        <TensesList :tenses="filteredTenses" @select-tense="$emit('select-tense', $event)" />
+        <!-- Tenses Section -->
+        <div v-if="mainCategory === 'tenses'">
+            <!-- Tense Filter Tabs -->
+            <div class="flex gap-3 overflow-x-auto pb-2 scrollbar-hide mb-6">
+                <button v-for="tab in tenseTabs" :key="tab.id" @click="activeTenseTab = tab.id" :class="[
+                    'flex-shrink-0 px-5 py-2.5 rounded-xl font-medium text-sm transition-all duration-200',
+                    activeTenseTab === tab.id
+                        ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg shadow-blue-200'
+                        : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'
+                ]">
+                    {{ tab.label }}
+                    <span :class="[
+                        'ml-2 px-2 py-0.5 rounded-full text-xs font-semibold',
+                        activeTenseTab === tab.id ? 'bg-white/20' : 'bg-gray-100'
+                    ]">
+                        {{ tab.count }}
+                    </span>
+                </button>
+            </div>
+
+            <!-- Tenses List -->
+            <TensesList :tenses="filteredTenses" @select-tense="$emit('select-tense', $event)" />
+        </div>
+
+        <!-- Grammar Section -->
+        <div v-else-if="mainCategory === 'grammar'">
+            <!-- Grammar Category Tabs -->
+            <div class="flex gap-3 overflow-x-auto pb-2 scrollbar-hide mb-6">
+                <button v-for="category in grammarCategories" :key="category" @click="activeGrammarCategory = category"
+                    :class="[
+                        'flex-shrink-0 px-5 py-2.5 rounded-xl font-medium text-sm transition-all duration-200 whitespace-nowrap',
+                        activeGrammarCategory === category
+                            ? 'bg-gradient-to-r from-green-600 to-emerald-600 text-white shadow-lg shadow-green-200'
+                            : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'
+                    ]">
+                    {{ category }}
+                    <span :class="[
+                        'ml-2 px-2 py-0.5 rounded-full text-xs font-semibold',
+                        activeGrammarCategory === category ? 'bg-white/20' : 'bg-gray-100'
+                    ]">
+                        {{ getTopicsByCategory(category).length }}
+                    </span>
+                </button>
+            </div>
+
+            <!-- Grammar Topics List -->
+            <GrammarList :topics="filteredGrammarTopics" @select-topic="$emit('select-grammar-topic', $event)" />
+        </div>
     </div>
 </template>
 
 <script setup>
 import { ref, computed } from 'vue';
 import TensesList from '../components/TensesList.vue';
+import GrammarList from '../components/GrammarList.vue';
+import { grammarData, getCategories, getTopicsByCategory } from '../data/grammarData';
 
 const props = defineProps({
     tenses: {
@@ -50,17 +100,20 @@ const props = defineProps({
     }
 });
 
-defineEmits(['select-tense']);
+defineEmits(['select-tense', 'select-grammar-topic']);
 
-const activeTab = ref('all');
+// Main category toggle
+const mainCategory = ref('tenses');
 
-const tabs = computed(() => {
+// Tenses state
+const activeTenseTab = ref('present');
+
+const tenseTabs = computed(() => {
     const presentTenses = props.tenses.filter(t => t.name.toLowerCase().includes('present'));
     const pastTenses = props.tenses.filter(t => t.name.toLowerCase().includes('past'));
     const futureTenses = props.tenses.filter(t => t.name.toLowerCase().includes('future'));
 
     return [
-        { id: 'all', label: 'All Tenses', count: props.tenses.length },
         { id: 'present', label: 'Present', count: presentTenses.length },
         { id: 'past', label: 'Past', count: pastTenses.length },
         { id: 'future', label: 'Future', count: futureTenses.length }
@@ -68,9 +121,16 @@ const tabs = computed(() => {
 });
 
 const filteredTenses = computed(() => {
-    if (activeTab.value === 'all') return props.tenses;
     return props.tenses.filter(t =>
-        t.name.toLowerCase().includes(activeTab.value)
+        t.name.toLowerCase().includes(activeTenseTab.value)
     );
+});
+
+// Grammar state
+const grammarCategories = computed(() => getCategories());
+const activeGrammarCategory = ref(grammarCategories.value[0]);
+
+const filteredGrammarTopics = computed(() => {
+    return getTopicsByCategory(activeGrammarCategory.value);
 });
 </script>

@@ -25,9 +25,11 @@
     <main class="flex-1 overflow-y-auto pb-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <router-view v-slot="{ Component }">
-          <component :is="Component" :tenses="tensesData" @select-tense="selectTense" />
+          <component :is="Component" :tenses="tensesData" @select-tense="selectTense"
+            @select-grammar-topic="selectGrammarTopic" />
         </router-view>
         <TenseDetail v-if="selectedTense" :tense="selectedTense" @close="selectedTense = null" />
+        <GrammarDetail v-if="selectedGrammarTopic" :topic="selectedGrammarTopic" @close="selectedGrammarTopic = null" />
       </div>
     </main>
 
@@ -90,17 +92,23 @@ import { ref, computed } from 'vue';
 import { useRoute } from 'vue-router';
 import { tensesData } from './data/tensesData.js';
 import TenseDetail from './components/TenseDetail.vue';
+import GrammarDetail from './components/GrammarDetail.vue';
 
 const route = useRoute();
 const selectedTense = ref(null);
+const selectedGrammarTopic = ref(null);
 
 const selectTense = (tense) => {
   selectedTense.value = tense;
 };
 
+const selectGrammarTopic = (topic) => {
+  selectedGrammarTopic.value = topic;
+};
+
 const currentPageTitle = computed(() => {
   const titles = {
-    '/learn': 'Learn Tenses',
+    '/learn': 'Learn Grammar',
     '/vocab': 'Vocabulary',
     '/practice': 'Practice'
   };
