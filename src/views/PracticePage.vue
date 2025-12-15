@@ -42,11 +42,9 @@
                     </svg>
                 </div>
                 <h3 class="text-xl font-bold text-gray-800 mb-2">
-                    {{ activeTab === 'fill-blanks' ? 'Fill in the Blanks' : activeTab === 'quiz' ? 'Quick Quiz' : 'Your
-                    Scores' }}
+                    {{ activeTab === 'fill-blanks' ? 'Fill in the Blanks' : activeTab === 'quiz' ? 'Quick Quiz' : 'Your Scores' }}
                 </h3>
-                <p class="text-gray-600">Coming soon! {{ activeTab === 'fill-blanks' ? 'Practice filling in the blanks
-                    with correct tense forms.' : activeTab === 'quiz' ? 'Test your knowledge with quick quizzes.' :
+                <p class="text-gray-600">Coming soon! {{ activeTab === 'fill-blanks' ? 'Practice filling in the blanks with correct tense forms.' : activeTab === 'quiz' ? 'Test your knowledge with quick quizzes.' :
                     'Track your practice scores and progress.' }}</p>
             </div>
         </div>
