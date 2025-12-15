@@ -167,8 +167,344 @@ export const vocabData = [
             { english: "Safe", hindi: "सुरक्षित", example: "This place is safe.", hindiExample: "यह जगह सुरक्षित है।" },
             { english: "Dangerous", hindi: "खतरनाक", example: "That road is dangerous.", hindiExample: "वह सड़क खतरनाक है।" }
         ]
+    },
+    {
+        day: 4,
+        title: "Day 4: Colors and Numbers",
+        words: [
+            { english: "Red", hindi: "लाल", example: "The rose is red.", hindiExample: "गुलाब लाल है।" },
+            { english: "Blue", hindi: "नीला", example: "The sky is blue.", hindiExample: "आकाश नीला है।" },
+            { english: "Green", hindi: "हरा", example: "Trees are green.", hindiExample: "पेड़ हरे होते हैं।" },
+            { english: "Yellow", hindi: "पीला", example: "The sun is yellow.", hindiExample: "सूरज पीला है।" },
+            { english: "Black", hindi: "काला", example: "I have a black shirt.", hindiExample: "मेरे पास काली कमीज है।" },
+            { english: "White", hindi: "सफेद", example: "Snow is white.", hindiExample: "बर्फ सफेद होती है।" },
+            { english: "Orange", hindi: "नारंगी", example: "The orange is orange.", hindiExample: "संतरा नारंगी है।" },
+            { english: "Pink", hindi: "गुलाबी", example: "She likes pink color.", hindiExample: "उसे गुलाबी रंग पसंद है।" },
+            { english: "Purple", hindi: "बैंगनी", example: "This flower is purple.", hindiExample: "यह फूल बैंगनी है।" },
+            { english: "Brown", hindi: "भूरा", example: "The dog is brown.", hindiExample: "कुत्ता भूरा है।" },
+            { english: "Gray", hindi: "स्लेटी", example: "The elephant is gray.", hindiExample: "हाथी स्लेटी है।" },
+            { english: "One", hindi: "एक", example: "I have one apple.", hindiExample: "मेरे पास एक सेब है।" },
+            { english: "Two", hindi: "दो", example: "I have two brothers.", hindiExample: "मेरे दो भाई हैं।" },
+            { english: "Three", hindi: "तीन", example: "There are three books.", hindiExample: "तीन किताबें हैं।" },
+            { english: "Four", hindi: "चार", example: "I need four chairs.", hindiExample: "मुझे चार कुर्सियां चाहिए।" },
+            { english: "Five", hindi: "पांच", example: "She has five fingers.", hindiExample: "उसकी पांच उंगलियां हैं।" },
+            { english: "Six", hindi: "छह", example: "Buy six eggs.", hindiExample: "छह अंडे खरीदो।" },
+            { english: "Seven", hindi: "सात", example: "There are seven days.", hindiExample: "सात दिन होते हैं।" },
+            { english: "Eight", hindi: "आठ", example: "I wake up at eight.", hindiExample: "मैं आठ बजे उठता हूँ।" },
+            { english: "Nine", hindi: "नौ", example: "The class starts at nine.", hindiExample: "कक्षा नौ बजे शुरू होती है।" },
+            { english: "Ten", hindi: "दस", example: "I have ten rupees.", hindiExample: "मेरे पास दस रुपये हैं।" },
+            { english: "First", hindi: "पहला", example: "This is my first day.", hindiExample: "यह मेरा पहला दिन है।" },
+            { english: "Second", hindi: "दूसरा", example: "He came second in race.", hindiExample: "वह दौड़ में दूसरे नंबर पर आया।" },
+            { english: "Third", hindi: "तीसरा", example: "This is the third floor.", hindiExample: "यह तीसरी मंजिल है।" },
+            { english: "Last", hindi: "आखिरी", example: "This is the last chance.", hindiExample: "यह आखिरी मौका है।" },
+            { english: "Next", hindi: "अगला", example: "See you next week.", hindiExample: "अगले हफ्ते मिलते हैं।" },
+            { english: "Previous", hindi: "पिछला", example: "I met him previous week.", hindiExample: "मैं उससे पिछले हफ्ते मिला था।" },
+            { english: "Many", hindi: "बहुत", example: "I have many friends.", hindiExample: "मेरे बहुत दोस्त हैं।" },
+            { english: "Few", hindi: "कुछ", example: "I have few questions.", hindiExample: "मेरे पास कुछ सवाल हैं।" },
+            { english: "More", hindi: "और अधिक", example: "I need more time.", hindiExample: "मुझे और समय चाहिए।" },
+            { english: "Less", hindi: "कम", example: "Eat less sugar.", hindiExample: "कम चीनी खाओ।" },
+            { english: "All", hindi: "सब", example: "All students passed.", hindiExample: "सभी छात्र पास हो गए।" },
+            { english: "Some", hindi: "कुछ", example: "Give me some water.", hindiExample: "मुझे कुछ पानी दो।" },
+            { english: "None", hindi: "कोई नहीं", example: "None of them came.", hindiExample: "उनमें से कोई नहीं आया।" },
+            { english: "Half", hindi: "आधा", example: "Give me half portion.", hindiExample: "मुझे आधा हिस्सा दो।" },
+            { english: "Quarter", hindi: "चौथाई", example: "Wait a quarter hour.", hindiExample: "एक चौथाई घंटा प्रतीक्षा करें।" },
+            { english: "Double", hindi: "दोगुना", example: "I want double the amount.", hindiExample: "मुझे दोगुनी रकम चाहिए।" },
+            { english: "Single", hindi: "एकल", example: "I need a single room.", hindiExample: "मुझे एक सिंगल रूम चाहिए।" },
+            { english: "Pair", hindi: "जोड़ा", example: "I bought a pair of shoes.", hindiExample: "मैंने जूतों का एक जोड़ा खरीदा।" },
+            { english: "Dozen", hindi: "दर्जन", example: "Buy one dozen bananas.", hindiExample: "एक दर्जन केले खरीदो।" },
+            { english: "Hundred", hindi: "सौ", example: "I have hundred rupees.", hindiExample: "मेरे पास सौ रुपये हैं।" },
+            { english: "Thousand", hindi: "हजार", example: "This costs one thousand.", hindiExample: "यह एक हजार का है।" },
+            { english: "Million", hindi: "दस लाख", example: "He has a million dollars.", hindiExample: "उसके पास दस लाख डॉलर हैं।" },
+            { english: "Zero", hindi: "शून्य", example: "The score is zero.", hindiExample: "स्कोर शून्य है।" },
+            { english: "Plus", hindi: "जमा", example: "Two plus two is four.", hindiExample: "दो जमा दो चार होते हैं।" },
+            { english: "Minus", hindi: "घटा", example: "Five minus three is two.", hindiExample: "पांच घटा तीन दो होता है।" },
+            { english: "Equal", hindi: "बराबर", example: "Both are equal.", hindiExample: "दोनों बराबर हैं।" },
+            { english: "Total", hindi: "कुल", example: "What is the total cost?", hindiExample: "कुल लागत क्या है?" },
+            { english: "Amount", hindi: "राशि", example: "Pay the full amount.", hindiExample: "पूरी राशि का भुगतान करें।" },
+            { english: "Count", hindi: "गिनना", example: "Count the money.", hindiExample: "पैसे गिनो।" }
+        ]
+    },
+    {
+        day: 5,
+        title: "Day 5: Food and Drinks",
+        words: [
+            { english: "Rice", hindi: "चावल", example: "I eat rice daily.", hindiExample: "मैं रोज चावल खाता हूँ।" },
+            { english: "Bread", hindi: "रोटी", example: "Make some bread.", hindiExample: "कुछ रोटी बनाओ।" },
+            { english: "Milk", hindi: "दूध", example: "Drink fresh milk.", hindiExample: "ताजा दूध पिओ।" },
+            { english: "Tea", hindi: "चाय", example: "I like tea.", hindiExample: "मुझे चाय पसंद है।" },
+            { english: "Coffee", hindi: "कॉफी", example: "She drinks coffee.", hindiExample: "वह कॉफी पीती है।" },
+            { english: "Juice", hindi: "रस", example: "Give me orange juice.", hindiExample: "मुझे संतरे का रस दो।" },
+            { english: "Sugar", hindi: "चीनी", example: "Add less sugar.", hindiExample: "कम चीनी डालो।" },
+            { english: "Salt", hindi: "नमक", example: "Pass me the salt.", hindiExample: "मुझे नमक दो।" },
+            { english: "Pepper", hindi: "काली मिर्च", example: "Add some pepper.", hindiExample: "कुछ काली मिर्च डालो।" },
+            { english: "Oil", hindi: "तेल", example: "Heat the oil.", hindiExample: "तेल गर्म करो।" },
+            { english: "Butter", hindi: "मक्खन", example: "Apply butter on bread.", hindiExample: "रोटी पर मक्खन लगाओ।" },
+            { english: "Cheese", hindi: "पनीर", example: "I like cheese pizza.", hindiExample: "मुझे पनीर पिज्जा पसंद है।" },
+            { english: "Egg", hindi: "अंडा", example: "Boil the eggs.", hindiExample: "अंडे उबालो।" },
+            { english: "Meat", hindi: "मांस", example: "He doesn't eat meat.", hindiExample: "वह मांस नहीं खाता।" },
+            { english: "Chicken", hindi: "मुर्गी", example: "I ordered chicken curry.", hindiExample: "मैंने चिकन करी मंगाई।" },
+            { english: "Fish", hindi: "मछली", example: "Fish is healthy.", hindiExample: "मछली स्वास्थ्यवर्धक है।" },
+            { english: "Vegetables", hindi: "सब्जियां", example: "Eat green vegetables.", hindiExample: "हरी सब्जियां खाओ।" },
+            { english: "Fruit", hindi: "फल", example: "Fruits are nutritious.", hindiExample: "फल पौष्टिक होते हैं।" },
+            { english: "Apple", hindi: "सेब", example: "An apple a day.", hindiExample: "रोज एक सेब।" },
+            { english: "Banana", hindi: "केला", example: "Bananas are yellow.", hindiExample: "केले पीले होते हैं।" },
+            { english: "Mango", hindi: "आम", example: "Mango is sweet.", hindiExample: "आम मीठा होता है।" },
+            { english: "Orange", hindi: "संतरा", example: "Oranges have vitamin C.", hindiExample: "संतरे में विटामिन सी होता है।" },
+            { english: "Grapes", hindi: "अंगूर", example: "I love grapes.", hindiExample: "मुझे अंगूर पसंद हैं।" },
+            { english: "Potato", hindi: "आलू", example: "Fry the potatoes.", hindiExample: "आलू तलो।" },
+            { english: "Tomato", hindi: "टमाटर", example: "Add fresh tomatoes.", hindiExample: "ताजे टमाटर डालो।" },
+            { english: "Onion", hindi: "प्याज", example: "Chop the onions.", hindiExample: "प्याज काटो।" },
+            { english: "Carrot", hindi: "गाजर", example: "Carrots are healthy.", hindiExample: "गाजर स्वास्थ्यवर्धक है।" },
+            { english: "Cabbage", hindi: "पत्ता गोभी", example: "Make cabbage curry.", hindiExample: "पत्ता गोभी की सब्जी बनाओ।" },
+            { english: "Spinach", hindi: "पालक", example: "Spinach has iron.", hindiExample: "पालक में आयरन होता है।" },
+            { english: "Cucumber", hindi: "खीरा", example: "Cut the cucumber.", hindiExample: "खीरा काटो।" },
+            { english: "Lemon", hindi: "नींबू", example: "Squeeze the lemon.", hindiExample: "नींबू निचोड़ो।" },
+            { english: "Garlic", hindi: "लहसुन", example: "Add garlic paste.", hindiExample: "लहसुन का पेस्ट डालो।" },
+            { english: "Ginger", hindi: "अदरक", example: "Ginger tea is good.", hindiExample: "अदरक की चाय अच्छी है।" },
+            { english: "Chili", hindi: "मिर्च", example: "It's too spicy.", hindiExample: "यह बहुत तीखा है।" },
+            { english: "Spice", hindi: "मसाला", example: "Add all spices.", hindiExample: "सभी मसाले डालो।" },
+            { english: "Soup", hindi: "सूप", example: "Have some hot soup.", hindiExample: "कुछ गर्म सूप लो।" },
+            { english: "Salad", hindi: "सलाद", example: "Make a fresh salad.", hindiExample: "ताजा सलाद बनाओ।" },
+            { english: "Sauce", hindi: "चटनी", example: "Pass the tomato sauce.", hindiExample: "टमाटर की चटनी दो।" },
+            { english: "Pickle", hindi: "अचार", example: "I like mango pickle.", hindiExample: "मुझे आम का अचार पसंद है।" },
+            { english: "Sweet", hindi: "मिठाई", example: "I love Indian sweets.", hindiExample: "मुझे भारतीय मिठाई पसंद है।" },
+            { english: "Cake", hindi: "केक", example: "Cut the birthday cake.", hindiExample: "जन्मदिन का केक काटो।" },
+            { english: "Ice cream", hindi: "आइसक्रीम", example: "I want chocolate ice cream.", hindiExample: "मुझे चॉकलेट आइसक्रीम चाहिए।" },
+            { english: "Chocolate", hindi: "चॉकलेट", example: "Kids love chocolate.", hindiExample: "बच्चों को चॉकलेट पसंद है।" },
+            { english: "Biscuit", hindi: "बिस्कुट", example: "Have some biscuits.", hindiExample: "कुछ बिस्कुट लो।" },
+            { english: "Snack", hindi: "नाश्ता", example: "I need a snack.", hindiExample: "मुझे नाश्ता चाहिए।" },
+            { english: "Breakfast", hindi: "सुबह का नाश्ता", example: "What's for breakfast?", hindiExample: "नाश्ते में क्या है?" },
+            { english: "Lunch", hindi: "दोपहर का खाना", example: "Let's have lunch.", hindiExample: "चलो खाना खाते हैं।" },
+            { english: "Dinner", hindi: "रात का खाना", example: "Dinner is ready.", hindiExample: "रात का खाना तैयार है।" },
+            { english: "Meal", hindi: "भोजन", example: "Three meals a day.", hindiExample: "दिन में तीन बार भोजन।" },
+            { english: "Hungry", hindi: "भूखा", example: "I am very hungry.", hindiExample: "मैं बहुत भूखा हूँ।" }
+        ]
+    },
+    {
+        day: 6,
+        title: "Day 6: Body Parts and Health",
+        words: [
+            { english: "Body", hindi: "शरीर", example: "Take care of your body.", hindiExample: "अपने शरीर का ध्यान रखो।" },
+            { english: "Face", hindi: "चेहरा", example: "Wash your face.", hindiExample: "अपना चेहरा धोओ।" },
+            { english: "Hair", hindi: "बाल", example: "Comb your hair.", hindiExample: "अपने बाल संवारो।" },
+            { english: "Forehead", hindi: "माथा", example: "She has a broad forehead.", hindiExample: "उसका माथा चौड़ा है।" },
+            { english: "Eyebrow", hindi: "भौं", example: "She raised her eyebrows.", hindiExample: "उसने अपनी भौंहें उठाईं।" },
+            { english: "Eyelid", hindi: "पलक", example: "Close your eyelids.", hindiExample: "अपनी पलकें बंद करो।" },
+            { english: "Eyelash", hindi: "बरौनी", example: "She has long eyelashes.", hindiExample: "उसकी बरौनियां लंबी हैं।" },
+            { english: "Cheek", hindi: "गाल", example: "The baby's cheeks are soft.", hindiExample: "बच्चे के गाल नरम हैं।" },
+            { english: "Chin", hindi: "ठुड्डी", example: "He has a strong chin.", hindiExample: "उसकी ठुड्डी मजबूत है।" },
+            { english: "Lip", hindi: "होंठ", example: "My lips are dry.", hindiExample: "मेरे होंठ सूखे हैं।" },
+            { english: "Tongue", hindi: "जीभ", example: "Show me your tongue.", hindiExample: "मुझे अपनी जीभ दिखाओ।" },
+            { english: "Tooth", hindi: "दांत", example: "Brush your teeth.", hindiExample: "अपने दांत ब्रश करो।" },
+            { english: "Neck", hindi: "गर्दन", example: "My neck hurts.", hindiExample: "मेरी गर्दन दुख रही है।" },
+            { english: "Shoulder", hindi: "कंधा", example: "He has broad shoulders.", hindiExample: "उसके कंधे चौड़े हैं।" },
+            { english: "Arm", hindi: "बांह", example: "Raise your arms.", hindiExample: "अपनी बांहें उठाओ।" },
+            { english: "Elbow", hindi: "कोहनी", example: "I hurt my elbow.", hindiExample: "मैंने अपनी कोहनी को चोट लगाई।" },
+            { english: "Wrist", hindi: "कलाई", example: "Wear the watch on your wrist.", hindiExample: "अपनी कलाई पर घड़ी पहनो।" },
+            { english: "Finger", hindi: "उंगली", example: "I have five fingers.", hindiExample: "मेरी पांच उंगलियां हैं।" },
+            { english: "Thumb", hindi: "अंगूठा", example: "He gave a thumbs up.", hindiExample: "उसने अंगूठा ऊपर किया।" },
+            { english: "Nail", hindi: "नाखून", example: "Cut your nails.", hindiExample: "अपने नाखून काटो।" },
+            { english: "Chest", hindi: "छाती", example: "Take a deep breath.", hindiExample: "गहरी सांस लो।" },
+            { english: "Stomach", hindi: "पेट", example: "My stomach hurts.", hindiExample: "मेरा पेट दुख रहा है।" },
+            { english: "Back", hindi: "पीठ", example: "My back is aching.", hindiExample: "मेरी पीठ दर्द कर रही है।" },
+            { english: "Waist", hindi: "कमर", example: "She has a slim waist.", hindiExample: "उसकी कमर पतली है।" },
+            { english: "Hip", hindi: "कूल्हा", example: "He broke his hip.", hindiExample: "उसका कूल्हा टूट गया।" },
+            { english: "Leg", hindi: "टांग", example: "My legs are tired.", hindiExample: "मेरी टांगें थकी हैं।" },
+            { english: "Thigh", hindi: "जांघ", example: "Exercise your thighs.", hindiExample: "अपनी जांघों का व्यायाम करो।" },
+            { english: "Knee", hindi: "घुटना", example: "I fell on my knee.", hindiExample: "मैं अपने घुटने पर गिर गया।" },
+            { english: "Ankle", hindi: "टखना", example: "I twisted my ankle.", hindiExample: "मैंने अपना टखना मोड़ लिया।" },
+            { english: "Heel", hindi: "एड़ी", example: "My heel is hurting.", hindiExample: "मेरी एड़ी दुख रही है।" },
+            { english: "Toe", hindi: "पैर की उंगली", example: "I have ten toes.", hindiExample: "मेरे दस पैर की उंगलियां हैं।" },
+            { english: "Skin", hindi: "त्वचा", example: "She has soft skin.", hindiExample: "उसकी त्वचा मुलायम है।" },
+            { english: "Blood", hindi: "खून", example: "Blood is red.", hindiExample: "खून लाल होता है।" },
+            { english: "Bone", hindi: "हड्डी", example: "Milk makes bones strong.", hindiExample: "दूध हड्डियों को मजबूत बनाता है।" },
+            { english: "Muscle", hindi: "मांसपेशी", example: "Exercise builds muscles.", hindiExample: "व्यायाम मांसपेशियां बनाता है।" },
+            { english: "Brain", hindi: "दिमाग", example: "Use your brain.", hindiExample: "अपने दिमाग का इस्तेमाल करो।" },
+            { english: "Lung", hindi: "फेफड़ा", example: "Lungs help us breathe.", hindiExample: "फेफड़े हमें सांस लेने में मदद करते हैं।" },
+            { english: "Liver", hindi: "जिगर", example: "Liver is important.", hindiExample: "जिगर महत्वपूर्ण है।" },
+            { english: "Kidney", hindi: "गुर्दा", example: "We have two kidneys.", hindiExample: "हमारे दो गुर्दे हैं।" },
+            { english: "Health", hindi: "स्वास्थ्य", example: "Health is wealth.", hindiExample: "स्वास्थ्य ही धन है।" },
+            { english: "Sick", hindi: "बीमार", example: "I am feeling sick.", hindiExample: "मैं बीमार महसूस कर रहा हूँ।" },
+            { english: "Pain", hindi: "दर्द", example: "I have severe pain.", hindiExample: "मुझे तेज दर्द है।" },
+            { english: "Fever", hindi: "बुखार", example: "He has high fever.", hindiExample: "उसे तेज बुखार है।" },
+            { english: "Cold", hindi: "सर्दी (जुकाम)", example: "I caught a cold.", hindiExample: "मुझे जुकाम हो गया।" },
+            { english: "Cough", hindi: "खांसी", example: "Take medicine for cough.", hindiExample: "खांसी की दवा लो।" },
+            { english: "Doctor", hindi: "डॉक्टर", example: "Visit the doctor.", hindiExample: "डॉक्टर के पास जाओ।" },
+            { english: "Hospital", hindi: "अस्पताल", example: "He is in the hospital.", hindiExample: "वह अस्पताल में है।" },
+            { english: "Medicine", hindi: "दवा", example: "Take your medicine.", hindiExample: "अपनी दवा लो।" },
+            { english: "Injection", hindi: "इंजेक्शन", example: "The injection is painful.", hindiExample: "इंजेक्शन दर्दनाक है।" },
+            { english: "Surgery", hindi: "शल्य चिकित्सा", example: "He needs surgery.", hindiExample: "उसे सर्जरी की जरूरत है।" }
+        ]
+    },
+    {
+        day: 7,
+        title: "Day 7: Time, Days, and Months",
+        words: [
+            { english: "Today", hindi: "आज", example: "Today is Monday.", hindiExample: "आज सोमवार है।" },
+            { english: "Tomorrow", hindi: "कल (आने वाला)", example: "I will come tomorrow.", hindiExample: "मैं कल आऊंगा।" },
+            { english: "Yesterday", hindi: "कल (बीता हुआ)", example: "I met him yesterday.", hindiExample: "मैं उससे कल मिला था।" },
+            { english: "Now", hindi: "अभी", example: "Come here now.", hindiExample: "अभी यहाँ आओ।" },
+            { english: "Later", hindi: "बाद में", example: "I will call you later.", hindiExample: "मैं तुम्हें बाद में कॉल करूंगा।" },
+            { english: "Soon", hindi: "जल्द ही", example: "He will arrive soon.", hindiExample: "वह जल्द ही पहुंचेगा।" },
+            { english: "Early", hindi: "जल्दी", example: "Wake up early.", hindiExample: "जल्दी उठो।" },
+            { english: "Late", hindi: "देर से", example: "Don't come late.", hindiExample: "देर से मत आओ।" },
+            { english: "Always", hindi: "हमेशा", example: "She always smiles.", hindiExample: "वह हमेशा मुस्कुराती है।" },
+            { english: "Never", hindi: "कभी नहीं", example: "I never lie.", hindiExample: "मैं कभी झूठ नहीं बोलता।" },
+            { english: "Sometimes", hindi: "कभी-कभी", example: "I sometimes forget.", hindiExample: "मैं कभी-कभी भूल जाता हूँ।" },
+            { english: "Often", hindi: "अक्सर", example: "He often visits us.", hindiExample: "वह अक्सर हमसे मिलने आता है।" },
+            { english: "Rarely", hindi: "शायद ही कभी", example: "I rarely eat outside.", hindiExample: "मैं शायद ही कभी बाहर खाता हूँ।" },
+            { english: "Monday", hindi: "सोमवार", example: "Monday is the first day.", hindiExample: "सोमवार पहला दिन है।" },
+            { english: "Tuesday", hindi: "मंगलवार", example: "I have a meeting Tuesday.", hindiExample: "मेरी मंगलवार को मीटिंग है।" },
+            { english: "Wednesday", hindi: "बुधवार", example: "Wednesday is mid-week.", hindiExample: "बुधवार सप्ताह का मध्य है।" },
+            { english: "Thursday", hindi: "गुरुवार", example: "I'm busy on Thursday.", hindiExample: "मैं गुरुवार को व्यस्त हूँ।" },
+            { english: "Friday", hindi: "शुक्रवार", example: "Friday is the last working day.", hindiExample: "शुक्रवार आखिरी कार्य दिवस है।" },
+            { english: "Saturday", hindi: "शनिवार", example: "Saturday is a holiday.", hindiExample: "शनिवार छुट्टी का दिन है।" },
+            { english: "Sunday", hindi: "रविवार", example: "We rest on Sunday.", hindiExample: "हम रविवार को आराम करते हैं।" },
+            { english: "Week", hindi: "सप्ताह", example: "There are seven days in a week.", hindiExample: "एक सप्ताह में सात दिन होते हैं।" },
+            { english: "Weekend", hindi: "सप्ताहांत", example: "Enjoy your weekend.", hindiExample: "अपने सप्ताहांत का आनंद लो।" },
+            { english: "Month", hindi: "महीना", example: "January is the first month.", hindiExample: "जनवरी पहला महीना है।" },
+            { english: "January", hindi: "जनवरी", example: "January is very cold.", hindiExample: "जनवरी बहुत ठंडा होता है।" },
+            { english: "February", hindi: "फरवरी", example: "February has 28 days.", hindiExample: "फरवरी में 28 दिन होते हैं।" },
+            { english: "March", hindi: "मार्च", example: "Spring comes in March.", hindiExample: "मार्च में वसंत आता है।" },
+            { english: "April", hindi: "अप्रैल", example: "April is a pleasant month.", hindiExample: "अप्रैल एक सुहावना महीना है।" },
+            { english: "May", hindi: "मई", example: "May is hot.", hindiExample: "मई गर्म होता है।" },
+            { english: "June", hindi: "जून", example: "Monsoon starts in June.", hindiExample: "जून में मानसून शुरू होता है।" },
+            { english: "July", hindi: "जुलाई", example: "It rains in July.", hindiExample: "जुलाई में बारिश होती है।" },
+            { english: "August", hindi: "अगस्त", example: "Independence day is in August.", hindiExample: "स्वतंत्रता दिवस अगस्त में है।" },
+            { english: "September", hindi: "सितंबर", example: "School starts in September.", hindiExample: "स्कूल सितंबर में शुरू होता है।" },
+            { english: "October", hindi: "अक्टूबर", example: "October is festive.", hindiExample: "अक्टूबर त्योहारों का महीना है।" },
+            { english: "November", hindi: "नवंबर", example: "November is cool.", hindiExample: "नवंबर ठंडा होता है।" },
+            { english: "December", hindi: "दिसंबर", example: "December is the last month.", hindiExample: "दिसंबर आखिरी महीना है।" },
+            { english: "Year", hindi: "साल", example: "Happy New Year!", hindiExample: "नव वर्ष की शुभकामनाएं!" },
+            { english: "Hour", hindi: "घंटा", example: "Wait for one hour.", hindiExample: "एक घंटा इंतजार करो।" },
+            { english: "Minute", hindi: "मिनट", example: "Give me five minutes.", hindiExample: "मुझे पांच मिनट दो।" },
+            { english: "Second", hindi: "सेकंड", example: "Wait a second.", hindiExample: "एक सेकंड रुको।" },
+            { english: "Clock", hindi: "घड़ी", example: "Check the clock.", hindiExample: "घड़ी देखो।" },
+            { english: "Watch", hindi: "कलाई घड़ी", example: "I bought a new watch.", hindiExample: "मैंने नई घड़ी खरीदी।" },
+            { english: "Alarm", hindi: "अलार्म", example: "Set the alarm for 6 AM.", hindiExample: "सुबह 6 बजे का अलार्म लगाओ।" },
+            { english: "Calendar", hindi: "कैलेंडर", example: "Check the calendar.", hindiExample: "कैलेंडर देखो।" },
+            { english: "Date", hindi: "तारीख", example: "What's today's date?", hindiExample: "आज की तारीख क्या है?" },
+            { english: "Birthday", hindi: "जन्मदिन", example: "Happy birthday!", hindiExample: "जन्मदिन मुबारक हो!" },
+            { english: "Anniversary", hindi: "वर्षगांठ", example: "Today is our anniversary.", hindiExample: "आज हमारी वर्षगांठ है।" },
+            { english: "Holiday", hindi: "छुट्टी", example: "Tomorrow is a holiday.", hindiExample: "कल छुट्टी है।" },
+            { english: "Vacation", hindi: "अवकाश", example: "We're going on vacation.", hindiExample: "हम छुट्टियों पर जा रहे हैं।" },
+            { english: "Festival", hindi: "त्योहार", example: "Diwali is a big festival.", hindiExample: "दिवाली एक बड़ा त्योहार है।" },
+            { english: "Celebration", hindi: "जश्न", example: "Let's have a celebration.", hindiExample: "चलो जश्न मनाते हैं।" }
+        ]
+    },
+    {
+        day: 8,
+        title: "Day 8: Weather and Nature",
+        words: [
+            { english: "Weather", hindi: "मौसम", example: "How's the weather today?", hindiExample: "आज मौसम कैसा है?" },
+            { english: "Climate", hindi: "जलवायु", example: "India has a tropical climate.", hindiExample: "भारत में उष्णकटिबंधीय जलवायु है।" },
+            { english: "Season", hindi: "मौसम (ऋतु)", example: "Summer is my favorite season.", hindiExample: "गर्मी मेरी पसंदीदा ऋतु है।" },
+            { english: "Summer", hindi: "गर्मी", example: "Summer is very hot.", hindiExample: "गर्मी बहुत गर्म होती है।" },
+            { english: "Winter", hindi: "सर्दी", example: "I love winter season.", hindiExample: "मुझे सर्दी का मौसम पसंद है।" },
+            { english: "Spring", hindi: "वसंत", example: "Flowers bloom in spring.", hindiExample: "वसंत में फूल खिलते हैं।" },
+            { english: "Autumn", hindi: "शरद", example: "Leaves fall in autumn.", hindiExample: "शरद में पत्ते गिरते हैं।" },
+            { english: "Monsoon", hindi: "मानसून", example: "Monsoon brings rain.", hindiExample: "मानसून बारिश लाता है।" },
+            { english: "Sunny", hindi: "धूप वाला", example: "It's a sunny day.", hindiExample: "यह धूप वाला दिन है।" },
+            { english: "Cloudy", hindi: "बादल छाए हुए", example: "The sky is cloudy.", hindiExample: "आकाश में बादल छाए हुए हैं।" },
+            { english: "Rainy", hindi: "बरसाती", example: "It's a rainy day.", hindiExample: "यह बरसाती दिन है।" },
+            { english: "Windy", hindi: "हवादार", example: "It's very windy today.", hindiExample: "आज बहुत हवा है।" },
+            { english: "Foggy", hindi: "धुंधला", example: "The morning is foggy.", hindiExample: "सुबह धुंधली है।" },
+            { english: "Storm", hindi: "तूफान", example: "A storm is coming.", hindiExample: "एक तूफान आ रहा है।" },
+            { english: "Thunder", hindi: "गड़गड़ाहट", example: "I hear thunder.", hindiExample: "मुझे गड़गड़ाहट सुनाई दे रही है।" },
+            { english: "Lightning", hindi: "बिजली", example: "Lightning struck the tree.", hindiExample: "बिजली पेड़ पर गिरी।" },
+            { english: "Rainbow", hindi: "इंद्रधनुष", example: "Look at the rainbow!", hindiExample: "इंद्रधनुष देखो!" },
+            { english: "Cloud", hindi: "बादल", example: "White clouds in the sky.", hindiExample: "आकाश में सफेद बादल।" },
+            { english: "Sky", hindi: "आकाश", example: "The sky is blue.", hindiExample: "आकाश नीला है।" },
+            { english: "Air", hindi: "हवा", example: "Fresh air is healthy.", hindiExample: "ताजी हवा स्वास्थ्यवर्धक है।" },
+            { english: "Temperature", hindi: "तापमान", example: "The temperature is high.", hindiExample: "तापमान ऊंचा है।" },
+            { english: "Humidity", hindi: "नमी", example: "High humidity makes it sticky.", hindiExample: "उच्च नमी से चिपचिपाहट होती है।" },
+            { english: "Drought", hindi: "सूखा", example: "There is a drought this year.", hindiExample: "इस साल सूखा पड़ा है।" },
+            { english: "Flood", hindi: "बाढ़", example: "The flood damaged houses.", hindiExample: "बाढ़ ने घरों को नुकसान पहुंचाया।" },
+            { english: "Nature", hindi: "प्रकृति", example: "Nature is beautiful.", hindiExample: "प्रकृति सुंदर है।" },
+            { english: "Environment", hindi: "पर्यावरण", example: "Protect the environment.", hindiExample: "पर्यावरण की रक्षा करो।" },
+            { english: "Earth", hindi: "पृथ्वी", example: "Earth is our home.", hindiExample: "पृथ्वी हमारा घर है।" },
+            { english: "Land", hindi: "भूमि", example: "This is fertile land.", hindiExample: "यह उपजाऊ भूमि है।" },
+            { english: "Mountain", hindi: "पहाड़", example: "The mountain is high.", hindiExample: "पहाड़ ऊंचा है।" },
+            { english: "Hill", hindi: "पहाड़ी", example: "We climbed the hill.", hindiExample: "हम पहाड़ी पर चढ़े।" },
+            { english: "Valley", hindi: "घाटी", example: "The valley is green.", hindiExample: "घाटी हरी है।" },
+            { english: "River", hindi: "नदी", example: "The river is flowing.", hindiExample: "नदी बह रही है।" },
+            { english: "Lake", hindi: "झील", example: "The lake is calm.", hindiExample: "झील शांत है।" },
+            { english: "Ocean", hindi: "महासागर", example: "The ocean is vast.", hindiExample: "महासागर विशाल है।" },
+            { english: "Sea", hindi: "समुद्र", example: "I love the sea.", hindiExample: "मुझे समुद्र पसंद है।" },
+            { english: "Beach", hindi: "समुद्र तट", example: "Let's go to the beach.", hindiExample: "चलो समुद्र तट पर चलते हैं।" },
+            { english: "Wave", hindi: "लहर", example: "The waves are high.", hindiExample: "लहरें ऊंची हैं।" },
+            { english: "Sand", hindi: "रेत", example: "The sand is hot.", hindiExample: "रेत गर्म है।" },
+            { english: "Stone", hindi: "पत्थर", example: "Don't throw stones.", hindiExample: "पत्थर मत फेंको।" },
+            { english: "Rock", hindi: "चट्टान", example: "The rock is heavy.", hindiExample: "चट्टान भारी है।" },
+            { english: "Forest", hindi: "जंगल", example: "The forest is dense.", hindiExample: "जंगल घना है।" },
+            { english: "Jungle", hindi: "जंगल (घना)", example: "Tigers live in the jungle.", hindiExample: "बाघ जंगल में रहते हैं।" },
+            { english: "Plant", hindi: "पौधा", example: "Water the plants.", hindiExample: "पौधों को पानी दो।" },
+            { english: "Grass", hindi: "घास", example: "The grass is green.", hindiExample: "घास हरी है।" },
+            { english: "Leaf", hindi: "पत्ता", example: "The leaf is falling.", hindiExample: "पत्ता गिर रहा है।" },
+            { english: "Branch", hindi: "शाखा", example: "The bird sat on the branch.", hindiExample: "पक्षी शाखा पर बैठा।" },
+            { english: "Root", hindi: "जड़", example: "The roots are deep.", hindiExample: "जड़ें गहरी हैं।" },
+            { english: "Seed", hindi: "बीज", example: "Plant the seeds.", hindiExample: "बीज बोओ।" },
+            { english: "Garden", hindi: "बगीचा", example: "The garden is beautiful.", hindiExample: "बगीचा सुंदर है।" },
+            { english: "Park", hindi: "पार्क", example: "Children play in the park.", hindiExample: "बच्चे पार्क में खेलते हैं।" }
+        ]
+    },
+    {
+        day: 9,
+        title: "Day 9: Emotions and Feelings",
+        words: [
+            { english: "Feel", hindi: "महसूस करना", example: "I feel happy today.", hindiExample: "मैं आज खुश महसूस कर रहा हूँ।" },
+            { english: "Emotion", hindi: "भावना", example: "Control your emotions.", hindiExample: "अपनी भावनाओं को नियंत्रित करो।" },
+            { english: "Feeling", hindi: "अनुभूति", example: "What's your feeling?", hindiExample: "आपकी क्या अनुभूति है?" },
+            { english: "Mood", hindi: "मनोदशा", example: "I'm in a good mood.", hindiExample: "मेरा मूड अच्छा है।" },
+            { english: "Sad", hindi: "उदास", example: "Why are you sad?", hindiExample: "तुम उदास क्यों हो?" },
+            { english: "Angry", hindi: "गुस्सा", example: "Don't get angry.", hindiExample: "गुस्सा मत करो।" },
+            { english: "Excited", hindi: "उत्साहित", example: "I'm excited about the trip.", hindiExample: "मैं यात्रा के लिए उत्साहित हूँ।" },
+            { english: "Nervous", hindi: "घबराया हुआ", example: "I feel nervous.", hindiExample: "मैं घबराया हुआ महसूस कर रहा हूँ।" },
+            { english: "Worried", hindi: "चिंतित", example: "Don't be worried.", hindiExample: "चिंतित मत होओ।" },
+            { english: "Scared", hindi: "डरा हुआ", example: "I'm scared of dogs.", hindiExample: "मैं कुत्तों से डरता हूँ।" },
+            { english: "Afraid", hindi: "भयभीत", example: "She is afraid of dark.", hindiExample: "वह अंधेरे से डरती है।" },
+            { english: "Brave", hindi: "बहादुर", example: "He is very brave.", hindiExample: "वह बहुत बहादुर है।" },
+            { english: "Confident", hindi: "आत्मविश्वासी", example: "Be confident in yourself.", hindiExample: "अपने आप में आत्मविश्वास रखो।" },
+            { english: "Shy", hindi: "शर्मीला", example: "He is a shy person.", hindiExample: "वह शर्मीला व्यक्ति है।" },
+            { english: "Proud", hindi: "गर्वित", example: "I'm proud of you.", hindiExample: "मुझे तुम पर गर्व है।" },
+            { english: "Ashamed", hindi: "शर्मिंदा", example: "I'm ashamed of my mistake.", hindiExample: "मैं अपनी गलती से शर्मिंदा हूँ।" },
+            { english: "Guilty", hindi: "दोषी", example: "I feel guilty.", hindiExample: "मैं दोषी महसूस करता हूँ।" },
+            { english: "Jealous", hindi: "ईर्ष्यालु", example: "Don't be jealous.", hindiExample: "ईर्ष्या मत करो।" },
+            { english: "Lonely", hindi: "अकेला", example: "I feel lonely.", hindiExample: "मैं अकेला महसूस करता हूँ।" },
+            { english: "Bored", hindi: "ऊबा हुआ", example: "I'm getting bored.", hindiExample: "मैं ऊब रहा हूँ।" },
+            { english: "Tired", hindi: "थका हुआ", example: "I'm very tired.", hindiExample: "मैं बहुत थका हुआ हूँ।" },
+            { english: "Sleepy", hindi: "नींद आना", example: "I feel sleepy.", hindiExample: "मुझे नींद आ रही है।" },
+            { english: "Energetic", hindi: "ऊर्जावान", example: "I feel energetic.", hindiExample: "मैं ऊर्जावान महसूस करता हूँ।" },
+            { english: "Relaxed", hindi: "आराम से", example: "I feel relaxed now.", hindiExample: "मैं अब आराम से हूँ।" },
+            { english: "Stressed", hindi: "तनावग्रस्त", example: "I'm stressed about work.", hindiExample: "मैं काम को लेकर तनावग्रस्त हूँ।" },
+            { english: "Calm", hindi: "शांत", example: "Stay calm.", hindiExample: "शांत रहो।" },
+            { english: "Peaceful", hindi: "शांतिपूर्ण", example: "This place is peaceful.", hindiExample: "यह जगह शांतिपूर्ण है।" },
+            { english: "Surprised", hindi: "हैरान", example: "I was surprised.", hindiExample: "मैं हैरान था।" },
+            { english: "Shocked", hindi: "चौंक गया", example: "I'm shocked by the news.", hindiExample: "मैं खबर से चौंक गया।" },
+            { english: "Confused", hindi: "भ्रमित", example: "I'm confused.", hindiExample: "मैं भ्रमित हूँ।" },
+            { english: "Curious", hindi: "जिज्ञासु", example: "I'm curious about it.", hindiExample: "मैं इसके बारे में जिज्ञासु हूँ।" },
+            { english: "Interested", hindi: "रुचि रखना", example: "I'm interested in music.", hindiExample: "मुझे संगीत में रुचि है।" },
+            { english: "Disappointed", hindi: "निराश", example: "I'm disappointed.", hindiExample: "मैं निराश हूँ।" },
+            { english: "Hopeful", hindi: "आशावान", example: "I'm hopeful for the future.", hindiExample: "मैं भविष्य के लिए आशावान हूँ।" },
+            { english: "Grateful", hindi: "आभारी", example: "I'm grateful to you.", hindiExample: "मैं आपका आभारी हूँ।" },
+            { english: "Thankful", hindi: "धन्यवादी", example: "I'm thankful for everything.", hindiExample: "मैं सब कुछ के लिए धन्यवादी हूँ।" },
+            { english: "Sorry", hindi: "माफ़ करना", example: "I'm sorry for my mistake.", hindiExample: "मैं अपनी गलती के लिए माफी चाहता हूँ।" },
+            { english: "Forgive", hindi: "माफ करना", example: "Please forgive me.", hindiExample: "कृपया मुझे माफ कर दो।" },
+            { english: "Trust", hindi: "विश्वास", example: "I trust you.", hindiExample: "मुझे तुम पर विश्वास है।" },
+            { english: "Doubt", hindi: "संदेह", example: "I have doubts.", hindiExample: "मुझे संदेह है।" },
+            { english: "Hope", hindi: "आशा", example: "Never lose hope.", hindiExample: "आशा कभी मत खोना।" },
+            { english: "Fear", hindi: "डर", example: "Face your fears.", hindiExample: "अपने डर का सामना करो।" },
+            { english: "Courage", hindi: "साहस", example: "Have courage.", hindiExample: "साहस रखो।" },
+            { english: "Patience", hindi: "धैर्य", example: "Have patience.", hindiExample: "धैर्य रखो।" },
+            { english: "Kindness", hindi: "दयालुता", example: "Show kindness to others.", hindiExample: "दूसरों के प्रति दयालुता दिखाओ।" },
+            { english: "Anger", hindi: "क्रोध", example: "Control your anger.", hindiExample: "अपने क्रोध को नियंत्रित करो।" },
+            { english: "Joy", hindi: "खुशी", example: "The child was full of joy.", hindiExample: "बच्चा खुशी से भरा था।" },
+            { english: "Sorrow", hindi: "दुख", example: "Time heals all sorrow.", hindiExample: "समय सभी दुख को भर देता है।" },
+            { english: "Smile", hindi: "मुस्कान", example: "Your smile is beautiful.", hindiExample: "तुम्हारी मुस्कान सुंदर है।" },
+            { english: "Cry", hindi: "रोना", example: "Don't cry.", hindiExample: "मत रोओ।" }
+        ]
     }
-    // Days 4-30 would follow similar structure
+    // Days 10-30 would follow similar structure
 ];
 
 // Test questions for every 3 days
@@ -197,26 +533,225 @@ export const vocabTests = [
                 options: ["Big", "Small", "Large", "Huge"]
             },
             {
+                type: "translation",
+                hindi: "सुंदर",
+                correctAnswer: "Beautiful",
+                options: ["Beautiful", "Pretty", "Nice", "Good"]
+            },
+            {
+                type: "translation",
+                hindi: "पढ़ना",
+                correctAnswer: "Read",
+                options: ["Read", "Write", "Study", "Learn"]
+            },
+            {
                 type: "sentence",
-                hindi: "मैं रोज व्यायाम करता हूँ।",
-                correctAnswer: "I exercise every day.",
+                hindi: "मैं रोज किताबें पढ़ता हूँ।",
+                correctAnswer: "I read books daily.",
                 options: [
-                    "I exercise every day.",
-                    "I am exercising every day.",
-                    "I exercised every day.",
-                    "I will exercise every day."
+                    "I read books daily.",
+                    "I am reading books daily.",
+                    "I will read books daily.",
+                    "I have read books daily."
                 ]
             },
             {
                 type: "sentence",
-                hindi: "यह किताब बहुत अच्छी है।",
-                correctAnswer: "This book is very good.",
+                hindi: "यह घर बहुत बड़ा है।",
+                correctAnswer: "This house is very big.",
                 options: [
-                    "This book is very good.",
-                    "This is a good book.",
-                    "The book is very nice.",
-                    "That book is very good."
+                    "This house is very big.",
+                    "That house is very big.",
+                    "This is a very big house.",
+                    "The house is very big."
                 ]
+            },
+            {
+                type: "sentence",
+                hindi: "वह बहुत तेज दौड़ता है।",
+                correctAnswer: "He runs very fast.",
+                options: [
+                    "He runs very fast.",
+                    "He is running very fast.",
+                    "He ran very fast.",
+                    "He will run very fast."
+                ]
+            },
+            {
+                type: "translation",
+                hindi: "मुलायम",
+                correctAnswer: "Soft",
+                options: ["Soft", "Hard", "Smooth", "Rough"]
+            },
+            {
+                type: "translation",
+                hindi: "लिखना",
+                correctAnswer: "Write",
+                options: ["Write", "Read", "Type", "Draw"]
+            }
+        ]
+    },
+    {
+        testId: 2,
+        daysRange: "4-6",
+        passingScore: 70,
+        questions: [
+            {
+                type: "translation",
+                hindi: "लाल",
+                correctAnswer: "Red",
+                options: ["Red", "Blue", "Green", "Yellow"]
+            },
+            {
+                type: "translation",
+                hindi: "दस",
+                correctAnswer: "Ten",
+                options: ["Ten", "Five", "Twenty", "Fifteen"]
+            },
+            {
+                type: "translation",
+                hindi: "चावल",
+                correctAnswer: "Rice",
+                options: ["Rice", "Bread", "Wheat", "Food"]
+            },
+            {
+                type: "translation",
+                hindi: "सिर",
+                correctAnswer: "Head",
+                options: ["Head", "Face", "Hair", "Brain"]
+            },
+            {
+                type: "translation",
+                hindi: "हाथ",
+                correctAnswer: "Hand",
+                options: ["Hand", "Finger", "Arm", "Palm"]
+            },
+            {
+                type: "sentence",
+                hindi: "मेरे पास पांच उंगलियां हैं।",
+                correctAnswer: "I have five fingers.",
+                options: [
+                    "I have five fingers.",
+                    "I have five hands.",
+                    "I had five fingers.",
+                    "I will have five fingers."
+                ]
+            },
+            {
+                type: "sentence",
+                hindi: "मुझे चाय पसंद है।",
+                correctAnswer: "I like tea.",
+                options: [
+                    "I like tea.",
+                    "I love tea.",
+                    "I liked tea.",
+                    "I am liking tea."
+                ]
+            },
+            {
+                type: "sentence",
+                hindi: "आकाश नीला है।",
+                correctAnswer: "The sky is blue.",
+                options: [
+                    "The sky is blue.",
+                    "Sky is blue.",
+                    "The sky was blue.",
+                    "A sky is blue."
+                ]
+            },
+            {
+                type: "translation",
+                hindi: "बुखार",
+                correctAnswer: "Fever",
+                options: ["Fever", "Cold", "Cough", "Pain"]
+            },
+            {
+                type: "translation",
+                hindi: "सेब",
+                correctAnswer: "Apple",
+                options: ["Apple", "Banana", "Orange", "Mango"]
+            }
+        ]
+    },
+    {
+        testId: 3,
+        daysRange: "7-9",
+        passingScore: 70,
+        questions: [
+            {
+                type: "translation",
+                hindi: "आज",
+                correctAnswer: "Today",
+                options: ["Today", "Tomorrow", "Yesterday", "Now"]
+            },
+            {
+                type: "translation",
+                hindi: "सोमवार",
+                correctAnswer: "Monday",
+                options: ["Monday", "Tuesday", "Sunday", "Friday"]
+            },
+            {
+                type: "translation",
+                hindi: "मौसम",
+                correctAnswer: "Weather",
+                options: ["Weather", "Climate", "Season", "Rain"]
+            },
+            {
+                type: "translation",
+                hindi: "खुश",
+                correctAnswer: "Happy",
+                options: ["Happy", "Sad", "Excited", "Joyful"]
+            },
+            {
+                type: "translation",
+                hindi: "बारिश",
+                correctAnswer: "Rain",
+                options: ["Rain", "Storm", "Water", "Cloud"]
+            },
+            {
+                type: "sentence",
+                hindi: "आज सोमवार है।",
+                correctAnswer: "Today is Monday.",
+                options: [
+                    "Today is Monday.",
+                    "Today was Monday.",
+                    "Today is a Monday.",
+                    "It is Monday today."
+                ]
+            },
+            {
+                type: "sentence",
+                hindi: "मैं बहुत खुश हूँ।",
+                correctAnswer: "I am very happy.",
+                options: [
+                    "I am very happy.",
+                    "I was very happy.",
+                    "I am so happy.",
+                    "I feel very happy."
+                ]
+            },
+            {
+                type: "sentence",
+                hindi: "जंगल घना है।",
+                correctAnswer: "The forest is dense.",
+                options: [
+                    "The forest is dense.",
+                    "Forest is dense.",
+                    "The forest was dense.",
+                    "A forest is dense."
+                ]
+            },
+            {
+                type: "translation",
+                hindi: "जनवरी",
+                correctAnswer: "January",
+                options: ["January", "February", "June", "July"]
+            },
+            {
+                type: "translation",
+                hindi: "उदास",
+                correctAnswer: "Sad",
+                options: ["Sad", "Happy", "Angry", "Worried"]
             }
         ]
     }
